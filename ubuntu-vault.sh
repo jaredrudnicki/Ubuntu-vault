@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ "$(id -u)" == "0" ]; then
-	echo "ubuntu-spaget.sh is not being run as root"
+	echo "ubuntu-vault.sh is not being run as root"
 	echo "run as 'sudo sh ubuntu-spaget.sh 2>&1 | tee output.log' to output the console output to a log file."
 	exit
 else
@@ -115,5 +115,28 @@ else
    	ufw deny 2049
     	ufw deny 515
     	ufw deny 111
+	
+	#Thank the user 
+	echo "#################################################################"
+	echo "#	  _________						#"
+	echo "#	  |o     o|						#"
+	echo "#	  |	  |						#"
+	echo "#	  |   x   |						#"
+	echo "#	  |	  |						#"
+	echo "#	  | _____ |	thank you for using ubuntu-vault	#"
+	echo "#	  \	  /	by: jared rudnicki			#"
+	echo "#	   \_____/						#"
+	echo "#	   ___||___						#"
+	echo "#	  /    .   \						#"
+	echo "#  	 / /|  . |\ \						#"
+	echo "#	/ / |  . | \ \						#"
+	echo "#	\ \ |  . | / /						#"
+	echo "#	(..)[----](..) 						#"
+	echo "#	    |    |						#"
+	echo "#	    |  | |						#"
+	echo "#	    |  | |						#"
+	echo "#	    |__|_|_						#"
+	echo "#	    (___]__]  						#"
+	echo "#################################################################"
 
 fi
